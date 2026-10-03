@@ -5,8 +5,6 @@ import java.util.Map;
 
 public class InventoryService {
 	private static final int LOW_STOCK_LIMIT = 5;
-	// key = productId, so finding a product is a direct lookup instead of looping
-	// through a list
 	private Map<Integer, Product> products = new LinkedHashMap<>();
 
 	public void addProduct(Product product) {
@@ -31,8 +29,6 @@ public class InventoryService {
 	public void addStock(int productId, int quantity) {
 		searchById(productId).addStock(quantity);
 	}
-
-	// reduces the stock and adds the item to the bill in one step
 	public void sellProduct(int productId, int quantity, Bill bill) {
 		Product product = searchById(productId);
 		product.sellProduct(quantity);
