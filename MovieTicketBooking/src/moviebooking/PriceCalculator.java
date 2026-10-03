@@ -3,7 +3,6 @@ package moviebooking;
 public class PriceCalculator {
 	private static final double WEEKEND_SURCHARGE = 0.20;
 
-	// day: 1 = Monday ... 7 = Sunday
 	public static boolean isWeekend(int day) {
 		return day == 6 || day == 7;
 	}
@@ -15,7 +14,6 @@ public class PriceCalculator {
 		return basePrice;
 	}
 
-	// returns the discount amount, blank code means no coupon
 	public static double discount(String code, double amount) {
 		if (code == null || code.isBlank()) {
 			return 0;
