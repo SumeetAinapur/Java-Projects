@@ -1,7 +1,6 @@
 package moviebooking;
 
 public class Theatre {
-	// true = booked, false = available
 	private boolean[][] seats;
 
 	public Theatre(int rows, int seatsPerRow) {
