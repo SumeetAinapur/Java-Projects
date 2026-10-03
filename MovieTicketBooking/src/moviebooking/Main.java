@@ -157,7 +157,6 @@ public class Main {
 		}
 	}
 
-	// converts text like "B4" into {row, column} array indexes
 	private static int[] parseSeat(String text, Theatre theatre) {
 		text = text.trim().toUpperCase();
 		if (text.length() < 2) {
@@ -191,7 +190,6 @@ public class Main {
 		movies[0] = new Movie("Kantara", 200, 5, 8);
 		movies[1] = new Movie("Jawan", 250, 5, 8);
 		movies[2] = new Movie("Interstellar", 300, 5, 8);
-		// a few seats already taken so the layout does not look empty
 		movies[0].getTheatre().bookSeat(0, 0);
 		movies[0].getTheatre().bookSeat(0, 1);
 		movies[0].getTheatre().bookSeat(2, 3);
