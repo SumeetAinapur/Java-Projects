@@ -37,7 +37,6 @@ public class Movie {
 		ratingCount++;
 	}
 
-	// average is calculated from the total, so we never store a rounded value
 	public double getAverageRating() {
 		if (ratingCount == 0) {
 			return 0;
