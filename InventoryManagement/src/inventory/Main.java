@@ -114,8 +114,6 @@ public class Main {
 		System.out.println("Product deleted.");
 	}
 
-	// keeps asking until the user types a valid number, so the program never
-	// crashes on bad input
 	private static int readInt(String message) {
 		while (true) {
 			System.out.print(message);
