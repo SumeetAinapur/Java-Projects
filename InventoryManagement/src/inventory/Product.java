@@ -38,8 +38,6 @@ public class Product {
 		return stock;
 	}
 
-	// no setStock() on purpose, stock can only change through addStock() and
-	// sellProduct()
 	public void setPrice(double price) {
 		if (price <= 0) {
 			throw new IllegalArgumentException("Price must be greater than zero.");
