@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bill {
-	// price is copied into the bill at the time of sale,
-	// so changing the product price later does not change an old bill
 	private static class Item {
 		String name;
 		int quantity;
